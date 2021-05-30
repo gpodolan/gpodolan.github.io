@@ -10,3 +10,30 @@
     height: 10%;
     width: 10%;
 }
+
+#header-image {
+    border-radius: 60%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+
+nav a {
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+}
+
+nav table {
+    width: 100%;
+}
+
+th.img {
+    width: 10%
+}
+
+th {
+    background-color: white;
+    width: 30%;
+}
