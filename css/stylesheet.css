@@ -1,8 +1,26 @@
+@font-face {
+    font-family: Roboto;
+    src: url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,400;1,500;1,700&display=swap");
+}
+
+@font-face {
+    font-family: "Roboto Mono";
+    src: url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+}
+
+@font-face {
+    font-family: "Source Code Pro";
+    src: url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+}
+
 * {
     font-family: Roboto;
     background-color: black;
     color: white;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 #construction {
@@ -11,29 +29,72 @@
     width: 10%;
 }
 
-#header-image {
-    border-radius: 60%;
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-}
-
 nav a {
-    font-size: 50px;
+    font-size: 2rem;
     font-weight: bold;
     color: black;
     background-color: white;
 }
 
-nav table {
+nav div {
     width: 100%;
-}
-
-th.img {
-    width: 10%
+    border: none;
 }
 
 th {
     background-color: white;
+    padding: 20px;
+    border: none;
+}
+
+img.header {
+    display: inline-block;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h1.header {
+    display: inline-block;
+    color: grey;
+    font-size: 3rem;
+}
+
+.header-fixed-elements {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    align-items: center;
+}
+
+.header-image-container {
+    width: 25%;
+    float: left;
+}
+
+.header-name-container {
+    width: 75%;
+    float: left;
+    min-height: 150px;
+    vertical-align: middle;
+    padding: 50px 0;
+}
+
+.header-nav-links {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 2rem 0;
+}
+
+.header-link {
     width: 30%;
+    background-color: white;
+}
+
+@media only screen and (max-width: 1280px) {
+    nav a {
+        font-size: 21px;
+    }   
 }
